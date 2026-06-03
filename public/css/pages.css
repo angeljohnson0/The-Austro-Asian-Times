@@ -1,0 +1,108 @@
+/* ============================================================
+   pages.css — Editor dashboard, archive, profile page styles
+   ============================================================ */
+
+/* ---- Editor dashboard: pending article card ---- */
+.pending-card {
+    background: var(--white);
+    border: 1px solid var(--gray-2);
+    border-left: 4px solid var(--gold);
+    border-radius: 2px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.pending-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.pending-card h3 a { color: var(--navy); }
+.pending-card h3 a:hover { color: var(--crimson); text-decoration: none; }
+
+.moderation-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--gray-1);
+}
+
+.reject-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;
+}
+
+.reject-form input[type="text"] {
+    flex: 1;
+    min-width: 180px;
+    max-width: 300px;
+    padding: 7px 10px;
+    font-size: 0.83rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+/* ---- Archive ---- */
+.archive-month { margin-bottom: 28px; }
+
+.archive-month-label {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--navy);
+    padding: 4px 12px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.archive-month ul {
+    list-style: none;
+    border: 1px solid var(--gray-2);
+    border-radius: 2px;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.archive-month li {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--gray-1);
+    font-size: 0.92rem;
+    transition: background 0.1s;
+}
+
+.archive-month li:last-child { border-bottom: none; }
+.archive-month li:hover { background: var(--gray-1); }
+
+.archive-month li a {
+    color: var(--navy);
+    font-family: Georgia, serif;
+    flex: 1;
+    min-width: 180px;
+}
+
+.archive-month li a:hover { color: var(--crimson); text-decoration: none; }
+
+/* ---- Profile ---- */
+.profile-banner {
+    background: var(--white);
+    border: 1px solid var(--gray-2);
+    border-top: 4px solid var(--navy);
+    border-radius: 2px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.profile-banner h1 { border: none; padding: 0; margin-bottom: 6px; }

@@ -1,0 +1,75 @@
+/* ============================================================
+   base.css — Reset, CSS variables, typography, utilities
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --navy:     #0d1f2d;
+    --navy-lt:  #162d42;
+    --crimson:  #c41e3a;
+    --crimson-d:#a3172f;
+    --gold:     #d4960a;
+    --white:    #ffffff;
+    --off:      #f6f5f3;
+    --gray-1:   #eeede9;
+    --gray-2:   #deddd8;
+    --gray-3:   #aaaaaa;
+    --gray-4:   #666666;
+    --text:     #1a1a1a;
+    --text-2:   #444444;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--off);
+}
+
+a { color: var(--crimson); text-decoration: none; }
+a:hover { color: var(--crimson-d); text-decoration: underline; }
+
+img { display: block; max-width: 100%; height: auto; }
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Headings */
+h1 {
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--navy);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--gray-2);
+    line-height: 1.2;
+}
+
+h2 { font-family: Georgia, serif;    font-size: 1.2rem;   color: var(--navy);   margin-bottom: 10px; }
+h3 { font-family: Georgia, serif;    font-size: 1.05rem;  color: var(--text);   margin-bottom: 8px; }
+h4 { font-family: Arial, sans-serif; font-size: 0.92rem;  font-weight: 700; color: var(--text-2); margin-bottom: 6px; }
+
+/* Utilities */
+.text-muted { color: var(--gray-3); font-family: Arial, sans-serif; font-size: 0.8rem; }
+.mt-8  { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mt-32 { margin-top: 32px; }
+.mb-0  { margin-bottom: 0; }
+
+.empty-state {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--gray-3);
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    background: var(--white);
+    border: 1px solid var(--gray-2);
+    border-radius: 2px;
+}
