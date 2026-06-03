@@ -1,0 +1,7 @@
+# Prevent PHP execution inside the uploads directory.
+# This stops an attacker who uploads a disguised .php file from running it.
+
+php_flag engine off
+Options -ExecCGI
+RemoveHandler .php .php3 .php4 .php5 .php7 .php8 .phtml .phar
+AddType text/plain .php .php3 .php4 .php5 .php7 .php8 .phtml .phar
